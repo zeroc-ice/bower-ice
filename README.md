@@ -12,10 +12,10 @@ $ bower install ice --save
 Add the necessary `<script>` tags to your html to include the Ice for JavaScript components you require.
 
 ```html
-<script src="/bower_components/zeroc-icejs/ice/js/lib/Ice.js"></script>
-<script src="/bower_components/zeroc-icejs/ice/js/lib/Glacier2.js"></script>
-<script src="/bower_components/zeroc-icejs/ice/js/lib/IceStorm.js"></script>
-<script src="/bower_components/zeroc-icejs/ice/js/lib/IceGrid.js"></script>
+<script src="/bower_components/ice/lib/Ice.js"></script>
+<script src="/bower_components/ice/lib/Glacier2.js"></script>
+<script src="/bower_components/ice/lib/IceStorm.js"></script>
+<script src="/bower_components/ice/lib/IceGrid.js"></script>
 <script type="text/javascript">
     var communicator = Ice.initialize();
     var proxy = communicator.stringToProxy("hello:ws -h localhost -p 10002");
