@@ -1,0 +1,39 @@
+# bower-ice
+Ice for JavaScript runtime binary distribution for bower.
+
+## Install
+
+```bash
+$ bower install ice --save
+```
+
+## Usage
+
+Add the necessary `<script>` tags to your html to include the Ice for JavaScript components you require.
+
+```html
+<script src="/bower_components/zeroc-icejs/ice/js/lib/Ice.js"></script>
+<script src="/bower_components/zeroc-icejs/ice/js/lib/Glacier2.js"></script>
+<script src="/bower_components/zeroc-icejs/ice/js/lib/IceStorm.js"></script>
+<script src="/bower_components/zeroc-icejs/ice/js/lib/IceGrid.js"></script>
+<script type="text/javascript">
+    var communicator = Ice.initialize();
+    var proxy = communicator.stringToProxy("hello:ws -h localhost -p 10002");
+</script>
+```
+
+Minified versions are available with the `.min.js` extension.
+
+## Documentation
+
+See the [Ice Documentation](https://doc.zeroc.com/display/Ice36/JavaScript+Mapping).
+
+## Slice2js Compiler
+
+To compile [Slice](https://doc.zeroc.com/display/Ice36/The+Slice+Language) files to JavaScript see the following:
+- [slice2js](https://github.com/zeroc-ice/slice2js)
+- [gulp-ice-builder](https://github.com/zeroc-ice/gulp-ice-builder)
+
+## Demos
+
+A collection of demos for Ice for JavaScript (and other language mappings) can be found [here](https://github.com/zeroc-ice/ice-demos).
