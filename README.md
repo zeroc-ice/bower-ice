@@ -1,5 +1,6 @@
-# bower-ice
-Ice for JavaScript runtime binary distribution for bower.
+# Ice for JavaScript
+
+[Ice](https://github.com/zeroc-ice/ice) is a comprehensive RPC framework with support for C++, .NET, Java, Python, JavaScript and more. This repository contains the [bower](http://bower.io/) distribution of Ice for JavaScript.
 
 ## Install
 
